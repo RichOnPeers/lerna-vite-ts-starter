@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "components/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "lerna run --scope guide dev",
+    "build": "lerna run --scope guide build",
+    "tsc": "lerna run build --scope @mono/*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "lerna": "^6.1.0"
+  }
+}
