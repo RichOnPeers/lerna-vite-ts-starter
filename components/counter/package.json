@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "lerna run build --scope=@mono/counter && jest"
+    "test": "lerna run build --scope=@mono/counter && jest --passWithNoTests"
   },
   "dependencies": {
     "react": "^18.0.26",
