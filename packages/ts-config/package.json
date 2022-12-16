@@ -1,0 +1,6 @@
+{
+	"name": "@mono/ts-config",
+	"version": "0.0.0",
+	"description": "Typescript default config",
+	"scripts": {}
+}
