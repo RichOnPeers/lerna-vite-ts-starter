@@ -1,0 +1,6 @@
+{
+	"name": "@mono/prettier-config",
+	"version": "0.0.0",
+	"main": ".prettierrc.js",
+	"description": "Prettier config"
+}

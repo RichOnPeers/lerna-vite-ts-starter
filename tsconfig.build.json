@@ -2,8 +2,7 @@
     "compilerOptions": {
         "target": "ESNext",
         "lib": ["DOM", "DOM.Iterable", "ESNext"],
-        "types": ["vite/guide"],
-        "allowJs": false,
+        "allowJs": true,
         "skipLibCheck": true,
         "esModuleInterop": false,
         "allowSyntheticDefaultImports": true,

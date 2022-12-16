@@ -1,33 +1,31 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
-import { isEmpty } from "@mono/is-empty";
-import { Counter } from "@mono/counter";
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import './App.css';
+import { isEmpty } from '@mono/is-empty';
+import { Counter } from '@mono/counter';
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0);
   const emptyArray = isEmpty([]);
-  console.log(emptyArray);
   return (
-    <div className="App">
+    <div className='App'>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+        <a href='https://vitejs.dev' target='_blank'>
+          <img src='/vite.svg' className='logo' alt='Vite logo' />
         </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href='https://reactjs.org' target='_blank'>
+          <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      <h2>Empty Array: {emptyArray ? 'true' : 'false'}</h2>
+      <div className='card'>
         <Counter count={count} setCount={setCount} />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className='read-the-docs'>Click on the Vite and React logos to learn more</p>
     </div>
   );
 }
