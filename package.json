@@ -11,12 +11,18 @@
     "build": "lerna run --scope guide build",
     "tsc": "lerna run build --scope @mono/*",
     "test": "lerna run --scope @mono/* test",
-    "validate-branch": "node ./scripts/branch-name"
+    "validate-branch": "node ./scripts/branch-name",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@mono/eslint-config": "0.0.0",
+    "@mono/prettier-config": "0.0.0",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
-    "husky": "^8.0.2",
-    "lerna": "^6.1.0"
+    "husky": "^8.0.0",
+    "lerna": "^6.1.0",
+    "lint-staged": "^13.1.0"
   }
 }
