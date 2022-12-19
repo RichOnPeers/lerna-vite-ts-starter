@@ -4,7 +4,7 @@
 - Husky
 
 ## Lerna
-Packages connected with a shared `Typescript`, `eslint` and `prettier` config.
+Packages connected with a shared `Typescript`, `eslint` and `prettier` config and configured to support caching for build and test.
 - `packages` for shared generic helper functions, configs and more
 - `components` for shared React components
 - `apps` for Vite applications
