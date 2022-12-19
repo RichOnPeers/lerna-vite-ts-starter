@@ -5,7 +5,7 @@ import { isEmpty } from '@mono/is-empty';
 import { Counter } from '@mono/counter';
 
 function App(): JSX.Element {
-  const [count, setCount] = useState(0);
+        const [count, setCount] = useState(0);
   const emptyArray = isEmpty([]);
   return (
     <div className='App'>
