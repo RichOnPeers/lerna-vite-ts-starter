@@ -23,11 +23,15 @@ Modern front-end tooling. Setup as default for React TS projects.
 
 
 ## Get started
-Change the package names `@mono` and script variables `guide` in the root `package.json` to match your setup.
-Update the links to packages in `devDependencies` in every affected `package.json`.
 - `yarn` to bootstrap the monorepo and link packages
 - `yarn tsc` to build packages
 - `yarn test` to test packages
 - `yarn start` to start the Vite dev environment
 - `yarn build` to build the Vite application
 - `yarn preview` to preview the Vite production build locally
+
+Inspect how `Counter` component and `is-empty` package is imported and used in the Vite application `App.jsx` and how the `ts-config`, `eslint-config` and `prettier-config` are used.
+
+### Make it your own
+Change the package names `@mono` and script variables `guide` in the root `package.json` to match your setup.
+Update the links to packages in `devDependencies` in every affected `package.json`.
