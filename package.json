@@ -12,7 +12,8 @@
     "tsc": "lerna run build --scope @mono/*",
     "test": "lerna run --scope @mono/* test",
     "validate-branch": "node ./scripts/branch-name",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preview": "lerna run --scope guide preview"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
